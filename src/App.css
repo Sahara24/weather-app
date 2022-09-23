@@ -27,6 +27,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+  transition: all 1sec ease-out;
 }
 
 .appMist:before {
@@ -38,6 +39,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+  transition: all 1sec ease-out;
 }
 .appClouds:before {
   background: url(./Images/clouds.jpg) no-repeat center center/cover;
@@ -48,6 +50,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+  transition: all 1sec ease-out;
 }
 .appClear:before {
   background: url(./Images/clear.jpg) no-repeat center center/cover;
@@ -58,6 +61,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+  transition: all 1sec ease-out;
 }
 .appThunderstorm:before {
   background: url(./Images/thunder.jpg) no-repeat center center/cover;
@@ -68,6 +72,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+  transition: all 1sec ease-out;
 }
 .appDrizzle:before {
   background: url(./Images/drizzle_rain.jpg) no-repeat center center/cover;
@@ -78,6 +83,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+  transition: all 1sec ease-out;
 }
 .appRain:before {
   background: url(./Images/rain.jpg) no-repeat center center/cover;
@@ -88,6 +94,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+  transition: all 1sec ease-out;
 }
 .appSnow:before {
   background: url(./Images/snow.jpg) no-repeat center center/cover;
@@ -98,6 +105,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+  transition: all 1sec ease-out;
 }
 .appTornado:before {
   background: url(./Images/tornado.jpg) no-repeat center center/cover;
@@ -108,6 +116,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+  transition: all 1sec ease-out;
 }
 
 .appHaze:before {
@@ -119,6 +128,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+  transition: all 1sec ease-out;
 }
 
 .App .search {
