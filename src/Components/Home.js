@@ -3,7 +3,10 @@ export const Home = ({ setType }) => {
   const [city, setCity] = useState('');
   const [error, setError] = useState('');
   const [data, setData] = useState({});
+
+
   const handleSubmit = async (e) => {
+    setData({})
     e.preventDefault();
     if (!city) {
       return;
@@ -11,18 +14,18 @@ export const Home = ({ setType }) => {
     const cityName = city[0].toUpperCase() + city.substring(1);
     try {
       const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=imperial&appid=286f97aee2d116992ce709789f047e39`);
-      if (res.ok) {
-        const resdata = await res.json();
-        setData(resdata)
-        setType(resdata.weather[0].main)
-        setCity('');
-      } else {
+      if (!res.ok) {
         const err = await res.json();
         throw new Error(err.message || err.statusText);
       }
+      const resdata = await res.json();
+      setError('');
+      setData(resdata)
+      setType(resdata.weather[0].main)
+      setCity('');
     }
     catch (err) {
-      setError("City not found!")
+      setError(err.message)
     }
 
   }
